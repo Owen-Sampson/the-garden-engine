@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Garden Engine</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .hero {
+      background: url('Hero.jpg.PNG') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 2;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 40px 20px;
+      background-color: #1c1c1c;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .service {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background-color: #000;
+      color: #777;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p, .section p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>The Garden Engine</h1>
+      <p>Repairs. Sharpening. Carb Tuning.<br>For the tools you can’t afford to replace.</p>
+      <a href="https://wa.me/447304074524?text=Hi%20there%2C%20I%20need%20a%20tool%20looked%20at%20%E2%80%94%20can%20you%20help%3F" target="_blank">WhatsApp Me</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+
+    <div class="service">
+      <h3>Chainsaw Servicing</h3>
+      <p>Bar off. Chain sharpened. Pull-start ready.</p>
+    </div>
+
+    <div class="service">
+      <h3>Strimmer & Mower Repair</h3>
+      <p>Carbs tuned. Cords replaced. You’re back to work.</p>
+    </div>
+
+    <div class="service">
+      <h3>Blade Sharpening</h3>
+      <p>Loppers, shears, hedge trimmers. Razor again.</p>
+    </div>
+
+    <div class="service">
+      <h3>Engine Diagnostics</h3>
+      <p>Starts, splutters, or doesn’t even cough — I’ll find out why.</p>
+    </div>
+  </div>
+
+  <footer>
+    Proudly powered by The Garden Engine. Built with grit, sweat, and a socket set.
+  </footer>
+
+</body>
+</html>
