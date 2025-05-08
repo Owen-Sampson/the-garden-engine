@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Garden Engine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #111;
+      background-color: #fefefe;
+    }
+
+    .hero {
+      background: url('Hero.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.4em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 14px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc5b;
+    }
+
+    .services {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .services h2 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .service {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .service-icon {
+      font-size: 2em;
+      margin-right: 15px;
+    }
+
+    .service-text h3 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    .service-text p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>The Garden Engine</h1>
+    <p>Tool repairs and maintenance for outdoor equipment</p>
+    <a class="whatsapp-button" href="https://wa.me/447000000000" target="_blank">WhatsApp Me</a>
+  </section>
+
+  <section class="services">
+    <h2>We're here to help your outdoor equipment</h2>
+
+    <div class="service">
+      <div class="service-icon">🛠️</div>
+      <div class="service-text">
+        <h3>Repairs</h3>
+        <p>Expert repair and servicing of lawn mowers, chainsaws, trimmers, and more.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service-icon">🔪</div>
+      <div class="service-text">
+        <h3>Sharpening</h3>
+        <p>Blade sharpening to ensure clean and efficient cuts in your garden.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service-icon">⚙️</div>
+      <div class="service-text">
+        <h3>Carb Tuning</h3>
+        <p>Carburetor adjustments for optimal engine performance and reliability.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
