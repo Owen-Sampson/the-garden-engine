@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Garden Engine</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .hero {
+      background: url('hero.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 2;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      background-color: #1c1c1c;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .service, .how-it-works {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .service h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .how-it-works ol {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    footer {
+      background-color: #000;
+      color: #777;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p, section p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>The Garden Engine</h1>
+      <p>Tool Repairs. Sharpening. Carb Tuning.<br>For the machines you can't afford to replace.</p>
+      <a href="https://wa.me/447304074524?text=Hi%20there%2C%20I%20need%20a%20tool%20looked%20at%20%E2%80%94%20can%20you%20help%3F" target="_blank">WhatsApp Me</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>What I Fix</h2>
+    <div class="service"><h3>Chainsaws</h3><p>Sharpened, cleaned, tuned, re-corded.</p></div>
+    <div class="service"><h3>Strimmers & Mowers</h3><p>Throttle problems, carb issues, won’t start? I’ll sort it.</p></div>
+    <div class="service"><h3>Blade Sharpening</h3><p>Shears, loppers, trimmers—brought back to razor standard.</p></div>
+    <div class="service"><h3>2-Stroke Diagnostics</h3><p>Spluttering? Dead pull? I’ll strip it and find out why.</p></div>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <ol>
+        <li>Message me on WhatsApp</li>
+        <li>Drop off your tool</li>
+        <li>I’ll take care of it</li>
+        <li>You pick it up, working</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    Based in Aston-on-Trent | Typical turnaround: 24–72 hrs<br/>
+    The Garden Engine © 2025
+  </footer>
+
+</body>
+</html>
